@@ -1,0 +1,102 @@
+
+@import 'mixins.scss';
+
+@keyframes ini-roll {
+    0% {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0); }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  
+  @keyframes brand-roll {
+    0% {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0); }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+
+  @keyframes hamburgerAniFirst {
+    0% {
+      transform: translate(0,0);
+    }
+    50% {
+      transform: translate(4px,0);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+  
+  @keyframes hamburgerAniSecond {
+    0% {
+      transform: translate(0,0);
+    }
+    50% {
+      transform: translate(-4px,0);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }      
+  
+  @keyframes git-roll {
+    0% {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0); }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  
+  @keyframes bounce {
+    50% {
+      -webkit-transform: translateY(5px);
+      -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      -o-transform: translateY(5px);
+      transform: translateY(5px); }
+    80% {
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+      transform: translateY(-5px); } }
+  
+  @keyframes swing {
+    0% {
+      -webkit-transform: translateX(2px);
+      -moz-transform: translateX(2px);
+      -ms-transform: translateX(2px);
+      -o-transform: translateX(2px);
+      transform: translateX(2px); }
+    100% {
+      -webkit-transform: translateX(-2px);
+      -moz-transform: translateX(-2px);
+      -ms-transform: translateX(-2px);
+      -o-transform: translateX(-2px);
+      transform: translateX(-2px); } }

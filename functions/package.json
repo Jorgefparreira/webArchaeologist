@@ -1,0 +1,37 @@
+{
+  "name": "web_archaeologist",
+  "version": "1.0.0",
+  "description": "\"My online CV and Portfolio\"",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf app/**/*.js app/**/*.js.map",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "prestart": "npm run clean",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jorgefparreira/webArchaeologist.git"
+  },
+  "author": "Jorge Parreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jorgefparreira/webArchaeologist/issues"
+  },
+  "homepage": "https://github.com/Jorgefparreira/webArchaeologist#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^3.0.1",
+    "nodemailer": "^4.6.3",
+    "pump": "^3.0.0",
+    "serve-favicon": "^2.4.5"
+  },
+  "private": false,
+  "engines": {
+    "node": "8"
+  }
+}
