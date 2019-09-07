@@ -85,7 +85,7 @@ class Contact extends Component {
     };
     xhttp.open(
       "POST",
-      "https://us-central1-web-archaeologis-1487692258858.cloudfunctions.net/app",
+      "https://us-central1-web-archaeologis-1487692258858.cloudfunctions.net/contactMailer",
       true
     );
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
