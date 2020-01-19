@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BrowserAnimation from "../components/browser_ani";
 
 class About extends Component {
   constructor(props) {
@@ -6,8 +7,7 @@ class About extends Component {
     var height = window.innerHeight;
     this.state = {
       aboutMargin: height + "px",
-      showAbout: "",
-      showAboutIframe: ""
+      showAbout: ""
     };
   }
 
@@ -40,11 +40,6 @@ class About extends Component {
 
   handleScroll = () => {
     this.setState({ showAbout: "show-about" });
-    const wrappedElement = document.getElementById("about-iframe");
-    if (this.reachIframe(wrappedElement)) {
-      this.setState({ showAboutIframe: "show-about-iframe" });
-      document.removeEventListener("scroll", this.handleScroll);
-    }
   };
 
   getSectionHeight = heightw => {
@@ -104,15 +99,16 @@ class About extends Component {
                     </p>
                   </article>
                 </div>
-                <div className="col-md-6 about-iframe-box">
-                  <div className="about-iframe-wrapper">
+                <div className="col-md-6">
+                  <BrowserAnimation></BrowserAnimation>
+                  {/* <div className="about-iframe-wrapper">
                     <iframe
                       className={`about-iframe ${this.state.showAboutIframe}`}
                       title="Web Dev Animation"
                       src="https://affectionate-roentgen-2bd2b8.netlify.com/"
                       id="about-iframe"
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-md-6 skills-row">
                   <h2>Experience with:</h2>

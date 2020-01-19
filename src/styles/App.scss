@@ -70,7 +70,7 @@ li {
 
 @media (min-width: 992px) {
   #scrollable-content {
-    @include transition(transform ease-out 0.6s);
+    transition:transform ease-out 0.6s;
   }
 }
 
@@ -79,76 +79,14 @@ li {
   top: 300px;
   right: calc(50% - 40px);
   width: 80px;
-  @include animation(brand-roll 1s infinite);
-  @include transition(1000ms);
+  animation:brand-roll 1s infinite;
+  transition:1000ms;
   z-index: -1;
 }
 
-/**** nav-bar ****/
-
-// nav {
-//   top: 0;
-//   position: fixed;
-//   width: 100%;
-//   padding: 0 10px;
-//   background-color: transparent !important;
-//   border-radius: 0;
-//   border: none;
-//   z-index: 111;
-//   @include transition(transform ease-out 0.8s);
-
-//   .dropdown-menu {
-//     padding: 0;
-//     border-radius: 0;
-//   }
-
-//   a,
-//   .dropdown-menu li a,
-//   ul li:active,
-//   .navbar-brand > a:hover {
-//     font-size: 22px;
-//     text-transform: uppercase;
-//     letter-spacing: 0.05em;
-//     text-decoration: none;
-//     font-family: "Artifika", serif;
-//     color: #b3bdce !important;
-//     background-color: transparent !important;
-//     border-radius: 0;
-//   }
-
-//   .brand-img {
-//     height: 70px;
-//     @include animation(ini-roll 2s 3s);
-//   }
-
-//   .navbar-brand {
-//     padding-top: 0;
-//     font-size: 1.3em;
-//     padding: 0 13px;
-//     color: #f2bc59 !important;
-//     text-transform: uppercase;
-//     letter-spacing: 0.05em;
-//     text-decoration: none;
-//     font-family: "Artifika", serif;
-//     cursor: pointer;
-//   }
-
-//   .navbar-brand:hover .brand-img {
-//     @include animation(brand-roll 2s);
-//   }
-
-//   .nav-item a {
-//     border: none;
-//     margin: 0;
-//     display: inline-block;
-//     padding: 10px 30px;
-//     position: relative;
-//   }
-// }
-
 .general-container {
   opacity: 0;
-  @include transition(700ms);
+  transition:700ms;
 }
 
 /**** intro ****/
@@ -168,29 +106,22 @@ li {
 .intro-img {
   top: 0;
   position: fixed;
-  @include transition(1000ms ease-out);
+  transition:1000ms ease-out;
   z-index: -1;
 }
-
-// .intro-img-bottom{
-//   top: 0;
-//   position: fixed;
-//   @include transition(500ms);
-//   z-index: -1;
-// }
 
 /**** about ****/
 
 #about {
   opacity: 0;
-  @include transition(1200ms);
+  transition:1200ms;
   padding-top: 20px;
   text-align: justify;
 }
 
 .brand-img {
   height: 100px;
-  @include animation(ini-roll 2s 3s);
+  animation:brand-roll 2s 3s;
 }
 
 .navbar-brand {
@@ -206,7 +137,7 @@ li {
 }
 
 .main-header:hover .brand-img {
-  @include animation(brand-roll 2s);
+  animation:brand-roll 2s;
 }
 
 h1 {
@@ -246,12 +177,12 @@ h1 {
   border: none;
   margin: 0 auto;
   display: block;
-  @include transition(1s ease-out);
-  @include transform(scale(0));
+  transition:1s ease-out;
+  transform:scale(0);
 }
 
 .show-about-iframe {
-  @include transform(scale(1));
+  transform:scale(1);
 }
 
 .main-header {
@@ -299,7 +230,7 @@ h1 {
   left: 50%;
   z-index: 99;
   opacity: 0;
-  @include transition(400ms);
+  transition:400ms;
 }
 
 [tooltip]::before {
@@ -339,7 +270,7 @@ h1 {
 [tooltip]:hover::after,
 [tooltip]:hover::before {
   opacity: 1;
-  @include transition(400ms);
+  transition:400ms;
   top: -6px;
 }
 
@@ -360,6 +291,49 @@ h1 {
   padding: 10px;
   height: 500px;
   width: 100%;
+}
+
+#browser-animation{
+  height: 100%;
+
+  #browser-window{
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+
+    #html-svg{
+      transition: 400ms;
+      animation:htmlSVG 10s infinite;
+    }
+
+    #css-svg{
+      transition: 400ms;
+      animation:cssSVG 10s infinite;
+    } 
+    
+    #js-svg{
+      transition: 400ms;
+      animation:jsSVG 10s infinite;
+    } 
+    
+    #react-svg{
+      transition: 400ms;
+      animation:reactSVG 10s infinite;
+    }     
+
+    #browser-svg-bg{
+      transition: 400ms;
+      animation:browserSVG 10s infinite;
+    }
+  }
+  #broser-finish-img{
+    position: absolute;
+    top: 0;
+    width: calc(100% - 30px);
+    margin-top: 11px;
+    z-index: 1;    
+  }
 }
 
 /**** work ****/
@@ -396,11 +370,11 @@ h1 {
 
 .proj-img {
   margin-bottom: 10px;
-  @include transition(all 0.3s ease-out);
+  transition:all 0.3s ease-out;
 }
 
 .proj-img:hover {
-  @include transform(scale(1.05));
+  transform:scale(1.05);
   box-shadow: 5px 4px 9px 0px rgba(0, 0, 0, 0.2),
     0 6px 20px 0px rgba(0, 0, 0, 0.7);
 }
@@ -415,7 +389,7 @@ h1 {
 }
 
 .github-link:hover .github-link-img {
-  @include animation(git-roll 1.5s linear infinite);
+  animation:git-roll 1.5s linear infinite;
 }
 
 .work-description {
@@ -487,7 +461,7 @@ h1 {
 
 #contact .alert {
   overflow: hidden;
-  @include transition(800ms);
+  transition:800ms;
   padding: 0 1.25rem;
   max-height: 0;
   border: none;
@@ -556,8 +530,13 @@ footer {
   padding: 0 auto !important;
 }
 
+#copyright {
+  padding-left: 25px;
+}
+
 #copyright p {
   color: #fff;
+  margin: 0;
 }
 
 .img-bounce {
@@ -565,18 +544,17 @@ footer {
 }
 
 .img-bounce:hover {
-  @include animation(bounce 0.8s linear infinite alternate);
+  animation:bounce 0.8s linear infinite alternate;
 }
 
 /**** @media ****/
 @media (min-width: 768px) {
   #copyright {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  #copyright p {
-    float: right;
-    margin: 0;
-  }
+
   .skills-row {
     margin-top: 0;
   }
@@ -614,7 +592,7 @@ footer {
   // .work-container,
   // #contact,
   // .footer-container {
-  //   @include transition(transform ease-out 400ms);
+  //   transition:transform ease-out 400ms;
   // }
 }
 
@@ -623,7 +601,7 @@ footer {
     padding: 40px 50px;
   }
   #about {
-    @include transition(1s ease-in);
+    transition:1s ease-in;
     margin-top: 200px;
   }
 }
