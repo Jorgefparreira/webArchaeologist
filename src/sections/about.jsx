@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BrowserAnimation from "../components/browser_ani";
+import TROWEL from "../assets/svg/trowel";
 
 class About extends Component {
   constructor(props) {
@@ -58,11 +59,12 @@ class About extends Component {
           <div className="container about-row">
             <div className="main-header">
               <div className="navbar-brand">
-                <img
+                {/* <img
                   className="brand-img"
                   alt="Web Arch Logo"
                   src={require("../assets/brand.png")}
-                />
+                /> */}
+                <TROWEL className='brand-img' />
               </div>
               <h1>Web Archaeologist</h1>
             </div>

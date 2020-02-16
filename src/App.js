@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
+import TROWEL from "./assets/svg/trowel";
 // import Navbar from "./components/navbar";
 import Intro from "./sections/intro";
 import ProjectsMain from "./sections/projects_main";
@@ -14,7 +15,7 @@ class App extends Component {
     super(props);
     this.state = {
       showContent: 0,
-      hideLoading: "block",
+      // hideLoading: "block",
       aboutHeight: 0,
       projectsHeight: 0,
       contactHeight: 0,
@@ -26,7 +27,7 @@ class App extends Component {
     setTimeout(
       function() {
         this.setState({ showContent: 1 });
-        this.setState({ hideLoading: "none" });
+        // this.setState({ hideLoading: "none" });
         this.setPageHeight();
       }.bind(this),
       2100
@@ -87,13 +88,9 @@ class App extends Component {
         {/* <Navbar /> */}
         <div
           className="loading-trowel-wrapper"
-          style={{ display: this.state.hideLoading }}
+          // style={{ display: this.state.hideLoading }}
         >
-          <img
-            className="img-fluid loading-trowel"
-            alt="Web Arch Logo"
-            src={require("./assets/brand.png")}
-          />
+          <TROWEL className='img-fluid loading-trowel' />
         </div>
         <div
           className="general-container"
