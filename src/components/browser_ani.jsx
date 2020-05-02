@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BROWSER_WIN from "../assets/svg/browser";
 
+
 class BrowserAnimation extends Component {
   render() {
     return (
@@ -10,7 +11,7 @@ class BrowserAnimation extends Component {
           id="broser-finish-img"
           className="img-fluid"
           alt="Web Arch Logo"
-          src={require("../assets/web-arch-browser.png")}
+          src={`${process.env.PUBLIC_URL}/images/web-arch-browser.png`}
         />
       </div>
     );

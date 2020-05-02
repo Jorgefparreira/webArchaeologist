@@ -59,11 +59,6 @@ class About extends Component {
           <div className="container about-row">
             <div className="main-header">
               <div className="navbar-brand">
-                {/* <img
-                  className="brand-img"
-                  alt="Web Arch Logo"
-                  src={require("../assets/brand.png")}
-                /> */}
                 <TROWEL className='brand-img' />
               </div>
               <h1>Web Archaeologist</h1>
@@ -103,14 +98,6 @@ class About extends Component {
                 </div>
                 <div className="col-md-6">
                   <BrowserAnimation></BrowserAnimation>
-                  {/* <div className="about-iframe-wrapper">
-                    <iframe
-                      className={`about-iframe ${this.state.showAboutIframe}`}
-                      title="Web Dev Animation"
-                      src="https://affectionate-roentgen-2bd2b8.netlify.com/"
-                      id="about-iframe"
-                    />
-                  </div> */}
                 </div>
                 <div className="col-md-6 skills-row">
                   <h2>Experience with:</h2>
@@ -125,33 +112,6 @@ class About extends Component {
                     <li>Keeping to deadlines in commercial projects</li>
                   </ul>
                   <br />
-                </div>
-                {/* <div className="col-12">
-              <h3 className="learn-more">For more information have a look at my <a className= "cv-modal-open" data-toggle="modal" data-target=".bs-example-modal-lg">CV</a>.</h3>           
-            </div> */}
-              </div>
-            </div>
-          </div>
-          <div
-            className="modal fade bs-example-modal-lg"
-            role="dialog"
-            aria-labelledby="myLargeModalLabel"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog modal-lg">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h2 className="modal-title">CV</h2>
-                  <button
-                    type="button"
-                    className="btn btn-default cv-modal-close-button"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-                <div className="modal-body">
-                  <embed id="cv-pdf" src={require("../assets/CV.pdf")} />
                 </div>
               </div>
             </div>

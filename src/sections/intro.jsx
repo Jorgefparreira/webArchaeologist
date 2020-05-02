@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+// import AmmaiaTop from "../assets/ammaia_top.png";
+// import AmmaiaBottom from "../assets/ammaia_bottom.png";
 
 class Intro extends Component {
   constructor() {
@@ -42,12 +44,12 @@ class Intro extends Component {
       return (
         <div id="intro">
           <img
-            src={require("../assets/ammaia_top_xs.png")}
+            src={`${process.env.PUBLIC_URL}/images/ammaia_top_xs.png`}
             className="img-fluid intro-img intro-img-top"
             alt="ammaia ruins"
           />
           <img
-            src={require("../assets/ammaia_bottom_xs.png")}
+            src={`${process.env.PUBLIC_URL}/images/ammaia_bottom_xs.png`}
             className="img-fluid intro-img intro-img-bottom"
             alt="ammaia ruins"
             style={{ transform: `translateY(-${this.state.scroll}px)` }}
@@ -58,12 +60,12 @@ class Intro extends Component {
       return (
         <div id="intro">
           <img
-            src={require("../assets/ammaia_top.png")}
+            src={`${process.env.PUBLIC_URL}/images/ammaia_top.png`}
             className="img-fluid intro-img intro-img-top"
             alt="ammaia ruins"
           />
           <img
-            src={require("../assets/ammaia_bottom.png")}
+            src={`${process.env.PUBLIC_URL}/images/ammaia_bottom.png`}
             className="img-fluid intro-img intro-img-bottom"
             alt="ammaia ruins"
             style={{ transform: `translateY(-${this.state.scroll}px)` }}

@@ -79,7 +79,7 @@ class Footer extends Component {
         </div>
         <img
           className="d-none"
-          src={require("../assets/brand.jpg")}
+          src={`${process.env.PUBLIC_URL}/images/brand.jpg`}
           alt="site logo"
         />
       </footer>

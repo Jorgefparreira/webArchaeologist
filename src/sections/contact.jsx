@@ -251,7 +251,7 @@ class Contact extends Component {
                 </div>
                 <div className="d-none d-sm-block col-sm-6 col-lg-6">
                   <img
-                    src={require("../assets/dluis-find1.png")}
+                    src={`${process.env.PUBLIC_URL}/images/dluis-find1.png`}
                     alt="Terra Sigillata find"
                     className="d-block mx-auto"
                   />

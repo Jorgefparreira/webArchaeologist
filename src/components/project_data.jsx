@@ -8,7 +8,7 @@ const Projects = props => {
       <br></br>
       <a href={`${project.anchor}`} id={`project${project.id}`}>
         <img
-          src={require(`../assets/${project.image}.jpg`)}
+          src={`${process.env.PUBLIC_URL}/images/${project.image}.jpg`}
           className="img-fluid proj-img"
           alt={project.title}
         ></img>
