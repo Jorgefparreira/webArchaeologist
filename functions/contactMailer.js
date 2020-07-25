@@ -6,7 +6,7 @@ exports.handler = function(req, res) {
     service: 'gmail',
     auth: {
       user: functions.config().mail.id,
-      pass: functions.config().mail.key
+      pass: functions.config().mail.appkey
     }
   });
   var mailOpts = {

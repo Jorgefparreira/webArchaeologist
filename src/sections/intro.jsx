@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import AmmaiaTop from "../assets/ammaia_top.png";
-// import AmmaiaBottom from "../assets/ammaia_bottom.png";
 
 class Intro extends Component {
   constructor() {

@@ -185,6 +185,14 @@ h1 {
   transform:scale(1);
 }
 
+.skills-row {
+  margin-top: 0;
+
+  li {
+    text-align: left;
+  }
+}
+
 .main-header {
   width: 100%;
   text-align: center;
@@ -352,11 +360,23 @@ h1 {
 
 .work-container {
   background-color: #fff;
+
+  h3{
+    margin: 20px 30px;
+    font-size: 32px;
+  }
+
+  .work-tile {
+    padding: 20px;
+
+    .no-link{
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
 }
 
-.work-tile {
-  padding: 20px;
-}
+
 
 .work-img {
   display: block;

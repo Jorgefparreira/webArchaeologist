@@ -108,6 +108,7 @@ class About extends Component {
                     <li>PHP, MySQL</li>
                     <li>WordPress</li>
                     <li>Adobe Photoshop and Illustrator</li>
+                    <li>Managing large scale websites with thousands of weekly users</li>
                     <li>Team working and attention to detail</li>
                     <li>Keeping to deadlines in commercial projects</li>
                   </ul>

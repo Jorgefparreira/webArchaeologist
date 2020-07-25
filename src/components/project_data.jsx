@@ -4,9 +4,8 @@ import GITHUB from "../assets/svg/github";
 const Projects = props => {
   const content = props.projects.map(project => (
     <div key={project.id} className="col-md-6 col-sm-12 work-tile">
-      {/* <h3 className="h2">{project.title}</h3> */}
       <br></br>
-      <a href={`${project.anchor}`} id={`project${project.id}`}>
+      <a target="_blank" href={`${project.anchor}`} id={`project${project.id}`}>
         <img
           src={`${process.env.PUBLIC_URL}/images/${project.image}.jpg`}
           className="img-fluid proj-img"
@@ -18,7 +17,7 @@ const Projects = props => {
         href={`${project.gitLink}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="github-link"
+        className={project.gitLink?'github-link':'no-link'}
       >
         <GITHUB></GITHUB>
         Check code on Github

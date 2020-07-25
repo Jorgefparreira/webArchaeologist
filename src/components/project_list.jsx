@@ -1,8 +1,8 @@
-const projects = [
+export const personalProjects = [
   {
     id: 1,
     title: "Lil Fimo Creations",
-    anchor: "https://lilfimocreations.co.uk",
+    anchor: "https://lilfimokeyrings.web.app",
     image: "lil_fimo_creations",
     gitLink: "https://github.com/Jorgefparreira/FimoCreationsReact",
     description:
@@ -19,21 +19,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "ArqueoScallabis",
-    anchor: "http://www.arqueoscallabis.pt",
-    image: "arqueoScallabis",
-    gitLink: "https://github.com/Jorgefparreira/arqueoScallabis",
-    description:
-      "A website commission for a small Portuguese archaeology unit, built using Angular.js and a PHP backend."
-  },
-  {
-    id: 4,
     title: "Excavating Portugal",
-    anchor: "https://excavating-portugal.netlify.com",
+    anchor: "https://excavating-portugal.herokuapp.com",
     image: "excavating_portugal",
-    gitLink:
-      "https://github.com/Jorgefparreira/webArchaeologist/tree/master/public/excavatingPortugal",
-    description: "Angular.js website about my archaeological excavations in Portugal."
+    gitLink: "https://github.com/Jorgefparreira/ExcavatingPortugal",
+    description: "Node.js with MongoDB website about my archaeological excavations in Portugal."
   }
 
   // {
@@ -46,4 +36,25 @@ const projects = [
   // }
 ];
 
-export default projects;
+export const commercialProjects = [
+  {
+    id: 1,
+    title: "Volt Bikes",
+    anchor: "http://voltbikes.co.uk/",
+    image: "volt",
+    gitLink: "",
+    description:
+      "Co-responsible for the development and maintenance of Volt's large scale website. Based on PHP with MySQL databases."
+  },  
+  {
+    id: 2,
+    title: "ArqueoScallabis",
+    anchor: "http://www.arqueoscallabis.pt",
+    image: "arqueoScallabis",
+    gitLink: "https://github.com/Jorgefparreira/arqueoScallabis",
+    description:
+      "A website commission for a small Portuguese archaeology unit, built using Angular.js and a PHP backend."
+  }
+];
+
+

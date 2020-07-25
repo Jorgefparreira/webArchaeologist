@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Projects from "../components/project_data";
-import projects from "../components/project_list";
+import {personalProjects,commercialProjects} from "../components/project_list";
 
 class ProjectsMain extends Component {
   constructor(props) {
@@ -10,7 +10,9 @@ class ProjectsMain extends Component {
     };
   }
 
+
   componentDidMount() {
+    console.log(commercialProjects)
     window.addEventListener("resize", this.handleWindowSizeChange);
     setTimeout(
       function() {
@@ -41,7 +43,19 @@ class ProjectsMain extends Component {
         <h2 className="text-center h1">Projects</h2>
         <hr className="projects-hr" />
         <div className="container">
-          <Projects projects={projects} />
+        <div className="row">
+            <div className="col-xs-12">
+              <h3>Commercial</h3>
+            </div>
+          </div>
+          <Projects projects={commercialProjects} />          
+          <br/><br/>
+          <div className="row">
+            <div className="col-xs-12">
+              <h3>Personal</h3>
+            </div>
+          </div>
+          <Projects projects={personalProjects} />
         </div>
         <br />
       </section>
