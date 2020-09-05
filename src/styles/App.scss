@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Artifika|Crimson+Text|Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Cantarell");
 
 @import "keyframes.scss";
 
@@ -8,6 +8,12 @@ $navBlue: #334d77;
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Cantarell", serif;
+  background-color: #fff;
+  color: #34495e;
 }
 
 body::-webkit-scrollbar-track {
@@ -29,38 +35,19 @@ a:visited {
   color: initial;
 }
 
-body {
-  font-family: "Crimson Text", serif;
-  background-color: #fff;
-  color: #34495e;
-}
 
-h1,
+h1 {
+  font-family: "Caveat", serif;
+}
 h2,
 h3 {
-  font-family: "Noto Serif", serif;
+
   font-weight: 100;
 }
 
 p,
 li {
   font-size: 1.4em;
-}
-
-.header {
-  padding: 5px;
-  margin: 0;
-  width: 100%;
-  background-color: #cccccc;
-}
-
-.header h1 {
-  text-align: center;
-  margin: 15px 0px;
-}
-
-.modal-title {
-  display: inline-block;
 }
 
 #scrollable-content {
@@ -91,58 +78,54 @@ li {
 
 /**** intro ****/
 
-#gallery {
+#intro {
   width: 100%;
   top: 0;
   position: fixed;
   z-index: -1;
   transition: 1s ease-out;
+
+  .intro-img {
+    top: 0;
+    position: fixed;
+    transition:1000ms ease-out;
+    z-index: -1;
+  }
 }
 
-.swiper-slide img {
-  width: 100%;
-}
 
-.intro-img {
-  top: 0;
-  position: fixed;
-  transition:1000ms ease-out;
-  z-index: -1;
-}
 
 /**** about ****/
 
-#about {
-  opacity: 0;
-  transition:1200ms;
-  padding-top: 20px;
-  text-align: justify;
+#about-section {
+  .main-header {
+    width: 100%;
+    text-align: center;
+
+    .navbar-brand {
+      padding: 0 13px;
+
+      .brand-img {
+        height: 100px;
+        animation:brand-roll 2s 3s;
+      }
+    }
+  
+    h1 {
+      padding: 0 0 40px 0;
+      text-align: center;
+      font-size: 4em !important;
+      display: inline;
+    }
+  }
+  
+  .main-header:hover .brand-img {
+    animation:brand-roll 2s;
+  }
+
+
 }
 
-.brand-img {
-  height: 100px;
-  animation:brand-roll 2s 3s;
-}
-
-.navbar-brand {
-  padding-top: 0;
-  font-size: 1.3em;
-  padding: 0 13px;
-  color: #f2bc59 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  font-family: "Artifika", serif;
-  cursor: pointer;
-}
-
-.main-header:hover .brand-img {
-  animation:brand-roll 2s;
-}
-
-h1 {
-  display: inline;
-}
 
 .about-row {
   border-top-left-radius: 5px;
@@ -193,20 +176,12 @@ h1 {
   }
 }
 
-.main-header {
-  width: 100%;
-  text-align: center;
-}
 
-.main-header h1 {
-  padding: 0 0 40px 0;
-  margin-top: 0;
-  text-align: center;
-  font-size: 3em !important;
-}
+
+
 
 .show-about {
-  margin-top: 0 !important;
+  margin-top: 15px !important;
   opacity: 1 !important;
 }
 
